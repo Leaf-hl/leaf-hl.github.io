@@ -3,15 +3,15 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#f6f3ec" />
+    <meta name="theme-color" content="#ffffff" />
     <meta
       name="description"
-      content="Haolin Ye is a PhD researcher in Electrical Engineering at Penn State, studying time-series foundation models, robust learning, and deployable AI systems."
+      content="Haolin Ye is a PhD researcher in Electrical Engineering at Penn State working on time-series foundation models, robust learning, and efficient AI systems."
     />
     <meta property="og:title" content="Haolin Ye | PhD Researcher" />
     <meta
       property="og:description"
-      content="Research in time-series foundation models, robust learning, and deployable AI systems."
+      content="Research in time-series foundation models, robust learning, and efficient AI systems."
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://leaf-hl.github.io/" />
@@ -23,15 +23,8 @@
     <a class="skip-link" href="#main">Skip to content</a>
 
     <header class="site-header">
-      <a class="identity" href="#top" aria-label="Haolin Ye, homepage">
-        <span class="identity-mark" aria-hidden="true">HY</span>
-        <span>Haolin Ye</span>
-      </a>
-      <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">
-        Menu
-      </button>
-      <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
-        <a href="#about">About</a>
+      <a class="site-name" href="#top">Haolin Ye</a>
+      <nav aria-label="Primary navigation">
         <a href="#research">Research</a>
         <a href="#publications">Publications</a>
         <a href="#experience">Experience</a>
@@ -40,261 +33,187 @@
     </header>
 
     <main id="main">
-      <section class="hero" id="top">
-        <div class="hero-copy">
-          <p class="eyebrow">PhD Researcher · Electrical Engineering</p>
-          <h1>Learning general representations for <em>temporal intelligence.</em></h1>
-          <p class="hero-summary">
-            I am Haolin Ye, a PhD researcher at Penn State. My current work focuses on
-            time-series foundation models: how they learn, transfer, and remain reliable across
-            domains, sampling conditions, and deployment constraints.
-          </p>
-          <div class="hero-links" aria-label="Contact and profiles">
-            <a class="primary-link" href="mailto:leafhaolin@gmail.com">Email me</a>
-            <a href="https://github.com/Leaf-hl" target="_blank" rel="noreferrer">GitHub ↗</a>
-            <a href="#publications">Publications ↓</a>
-          </div>
-        </div>
-
-        <aside class="focus-card" aria-label="Current research focus">
-          <p class="card-label">Current focus</p>
-          <p class="focus-title">Time-Series Foundation Models</p>
-          <ol>
-            <li><span>01</span>Cross-domain pretraining</li>
-            <li><span>02</span>Multi-scale representations</li>
-            <li><span>03</span>Efficient adaptation</li>
-            <li><span>04</span>Robust transfer</li>
-          </ol>
-        </aside>
-      </section>
-
-      <section class="section intro-grid" id="about">
-        <div>
-          <p class="section-index">01 / About</p>
-          <h2>Research grounded in signals, systems, and real constraints.</h2>
-        </div>
-        <div class="prose">
-          <p>
-            My research sits at the intersection of representation learning and intelligent
-            sensing. I am interested in models that can discover reusable structure from temporal
-            data instead of being rebuilt for every dataset and task.
-          </p>
-          <p>
-            Before beginning my PhD, I worked on heterogeneous large-model training, multimodal
-            perception, LiDAR deployment, and industrial signal analysis. These experiences shape
-            how I approach foundation models: performance matters, but so do robustness,
-            efficiency, and clear evaluation.
-          </p>
-          <dl class="quick-facts">
-            <div><dt>Based in</dt><dd>State College, Pennsylvania</dd></div>
-            <div><dt>Affiliation</dt><dd>Penn State · EECS</dd></div>
-            <div><dt>Seeking</dt><dd>Research internships and collaborations</dd></div>
-          </dl>
-        </div>
+      <section class="intro" id="top">
+        <p class="kicker">PhD Researcher in Electrical Engineering</p>
+        <h1>Haolin Ye</h1>
+        <p class="affiliation">
+          The Pennsylvania State University, State College, Pennsylvania
+        </p>
+        <p class="summary">
+          I study time-series foundation models and reliable representation learning. My current
+          work asks how pretrained temporal models can transfer across domains, adapt efficiently,
+          and remain robust under missing data, irregular sampling, and distribution shift.
+        </p>
+        <p class="links" aria-label="Contact and profiles">
+          <a href="mailto:leafhaolin@gmail.com">Email</a>
+          <a href="https://www.linkedin.com/in/haolin-ye-6b43791b0/" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="https://github.com/Leaf-hl" target="_blank" rel="noreferrer">GitHub</a>
+        </p>
       </section>
 
       <section class="section" id="research">
-        <div class="section-heading">
-          <div>
-            <p class="section-index">02 / Research</p>
-            <h2>Current research agenda</h2>
-          </div>
-          <p>
-            I study how a single pretrained model can understand diverse temporal processes and
-            transfer reliably to new tasks.
-          </p>
-        </div>
-
-        <div class="research-list">
-          <article>
-            <span class="research-number">01</span>
-            <div>
-              <p class="card-label">Foundation models</p>
-              <h3>Universal temporal representations</h3>
-              <p>
-                Pretraining objectives and architectures that capture transferable structure
-                across domains, variables, sampling rates, and forecasting horizons.
-              </p>
-            </div>
-          </article>
-          <article>
-            <span class="research-number">02</span>
-            <div>
-              <p class="card-label">Representation learning</p>
-              <h3>Multi-scale sequence modeling</h3>
-              <p>
-                Adaptive patching, frequency-aware features, and multi-resolution mechanisms for
-                sequences with interacting local and long-range dynamics.
-              </p>
-            </div>
-          </article>
-          <article>
-            <span class="research-number">03</span>
-            <div>
-              <p class="card-label">Efficient AI</p>
-              <h3>Adaptation without full retraining</h3>
-              <p>
-                Parameter-efficient adaptation and compact inference strategies that make large
-                temporal models useful beyond high-resource compute environments.
-              </p>
-            </div>
-          </article>
-          <article>
-            <span class="research-number">04</span>
-            <div>
-              <p class="card-label">Reliability</p>
-              <h3>Generalization under imperfect data</h3>
-              <p>
-                Evaluation under distribution shift, missing observations, irregular sampling,
-                and limited labels—with an emphasis on honest transfer claims.
-              </p>
-            </div>
-          </article>
-        </div>
+        <h2>Research interests</h2>
+        <ul class="interest-list">
+          <li>
+            <strong>Time-series foundation models.</strong>
+            Cross-domain pretraining and transferable temporal representations.
+          </li>
+          <li>
+            <strong>Multi-scale sequence modeling.</strong>
+            Adaptive patching, frequency-aware features, and long-range dynamics.
+          </li>
+          <li>
+            <strong>Efficient adaptation.</strong>
+            Parameter-efficient methods and compact inference for temporal models.
+          </li>
+          <li>
+            <strong>Reliable learning.</strong>
+            Generalization under distribution shift, missing observations, and limited labels.
+          </li>
+        </ul>
       </section>
 
       <section class="section" id="publications">
-        <div class="section-heading">
+        <h2>Publications</h2>
+
+        <article class="publication">
+          <p class="year">2026</p>
           <div>
-            <p class="section-index">03 / Publications</p>
-            <h2>Selected work</h2>
-          </div>
-          <p>Work spanning robust sensing and large-scale machine learning systems.</p>
-        </div>
-
-        <div class="publication-list">
-          <article class="publication-item">
-            <div class="publication-year">2026</div>
-            <div>
-              <p class="publication-status">Manuscript</p>
-              <h3>
-                Enhancing food safety through robust metal-contaminant detection with regularized
-                geometric-prior-guided learning
-              </h3>
-              <p class="authors">
-                <strong>Haolin Ye</strong>, Suhrid Das, Vishal Monga, and Ankit Tyagi
-              </p>
-              <p class="publication-note">
-                Orientation-aware learning for electromagnetic time-series signals, combining
-                geometric guidance and conditional normalization for robust contaminant detection.
-              </p>
+            <h3>
+              Enhancing food safety through robust metal-contaminant detection with regularized
+              geometric-prior-guided learning
+            </h3>
+            <p class="authors">
+              <strong>Haolin Ye</strong>, Suhrid Das, Vishal Monga, and Ankit Tyagi
+            </p>
+            <p class="venue">Manuscript.</p>
+            <p class="paper-links">
               <a href="mailto:leafhaolin@gmail.com?subject=Paper%20request%3A%20metal-contaminant%20detection">
-                Request manuscript →
+                Request manuscript
               </a>
-            </div>
-          </article>
+            </p>
+          </div>
+        </article>
 
-          <article class="publication-item">
-            <div class="publication-year">2024</div>
-            <div>
-              <p class="publication-status">arXiv:2405.16256</p>
-              <h3>
-                HETHUB: A Distributed Training System with Heterogeneous Cluster for Large-Scale
-                Models
-              </h3>
-              <p class="authors">
-                Si Xu, Zixiao Huang, Yan Zeng, Shengen Yan, Xuefei Ning, Quanlu Zhang,
-                <strong>Haolin Ye</strong>, et al.
-              </p>
-              <p class="publication-note">
-                A training system that combines unified communication, performance prediction,
-                and automated parallel planning across heterogeneous accelerators.
-              </p>
-              <a href="https://arxiv.org/abs/2405.16256" target="_blank" rel="noreferrer">
-                arXiv ↗
-              </a>
-            </div>
-          </article>
-        </div>
+        <article class="publication">
+          <p class="year">2024</p>
+          <div>
+            <h3>
+              HETHUB: A Distributed Training System with Heterogeneous Cluster for Large-Scale
+              Models
+            </h3>
+            <p class="authors">
+              Si Xu, Zixiao Huang, Yan Zeng, Shengen Yan, Xuefei Ning, Quanlu Zhang,
+              <strong>Haolin Ye</strong>, et al.
+            </p>
+            <p class="venue">arXiv:2405.16256.</p>
+            <p class="paper-links">
+              <a href="https://arxiv.org/abs/2405.16256" target="_blank" rel="noreferrer">arXiv</a>
+            </p>
+          </div>
+        </article>
       </section>
 
       <section class="section" id="experience">
-        <div class="section-heading">
-          <div>
-            <p class="section-index">04 / Experience</p>
-            <h2>Research in practice</h2>
-          </div>
-          <p>Selected roles that connect machine learning research with working systems.</p>
-        </div>
+        <h2>Selected experience</h2>
 
-        <div class="timeline">
-          <article>
-            <div class="timeline-date">2025</div>
-            <div class="timeline-role"><h3>R&amp;D Graduate Intern</h3><p>Eriez Manufacturing Co.</p></div>
+        <article class="entry">
+          <div class="entry-meta">2025</div>
+          <div>
+            <h3>R&amp;D Graduate Intern</h3>
+            <p class="organization">Eriez Manufacturing Co.</p>
             <p>
               Developed orientation-aware learning methods for electromagnetic metal detection,
-              including signal normalization and robust classification across testing conditions.
+              including geometric orientation estimation, signal normalization, and robust
+              classification.
             </p>
-          </article>
-          <article>
-            <div class="timeline-date">2024</div>
-            <div class="timeline-role"><h3>System Communication Engineer Intern</h3><p>Wuwen Xinqiong · AI R&amp;D</p></div>
+          </div>
+        </article>
+
+        <article class="entry">
+          <div class="entry-meta">2024</div>
+          <div>
+            <h3>System Communication Engineer Intern</h3>
+            <p class="organization">Wuwen Xinqiong, AI R&amp;D</p>
             <p>
-              Built HETHUB components for distributed large-model training, including multiple
-              parallelism strategies, performance prediction, and automated planning.
+              Built components for HETHUB, including distributed parallelism strategies,
+              performance prediction, and automated parallel planning.
             </p>
-          </article>
-          <article>
-            <div class="timeline-date">2023</div>
-            <div class="timeline-role"><h3>Research Assistant</h3><p>Northeastern University · Wireless IoT Institute</p></div>
+          </div>
+        </article>
+
+        <article class="entry">
+          <div class="entry-meta">2023</div>
+          <div>
+            <h3>Research Assistant</h3>
+            <p class="organization">Northeastern University, Institute for the Wireless Internet of Things</p>
             <p>
               Investigated efficient multimodal 3D detection through BEVFusion profiling and
               studied quantization for large language models.
             </p>
-          </article>
-          <article>
-            <div class="timeline-date">2021–22</div>
-            <div class="timeline-role"><h3>Software &amp; Systems Intern</h3><p>SenseTime</p></div>
-            <p>
-              Converted a 3D LiDAR detection network from FP32 to FP16, evaluated it across
-              platforms, and documented the deployment workflow.
-            </p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section education-section" id="education">
-        <div>
-          <p class="section-index">05 / Education</p>
-          <h2>Education</h2>
-          <div class="education-list">
-            <article>
-              <p class="education-date">2024–2029 · expected</p>
-              <h3>The Pennsylvania State University</h3>
-              <p>PhD, Electrical Engineering</p>
-            </article>
-            <article>
-              <p class="education-date">2022–2024</p>
-              <h3>Boston University</h3>
-              <p>MS, Electrical &amp; Computer Engineering</p>
-            </article>
-            <article>
-              <p class="education-date">2018–2022</p>
-              <h3>Shanghai Jiao Tong University · UM–SJTU Joint Institute</h3>
-              <p>BE, Electrical &amp; Computer Engineering · Minor in Data Science</p>
-            </article>
           </div>
-        </div>
+        </article>
 
-        <aside class="toolkit">
-          <p class="section-index">Toolkit</p>
-          <div><h3>Languages</h3><p>Python, C/C++, Java, R, MATLAB, SQL</p></div>
-          <div><h3>Machine learning</h3><p>PyTorch, TensorFlow, Keras, scikit-learn</p></div>
-          <div><h3>Systems</h3><p>Linux, Git, Docker, Shell, distributed training</p></div>
-        </aside>
+        <article class="entry">
+          <div class="entry-meta">2021-22</div>
+          <div>
+            <h3>Software and Systems Development Intern</h3>
+            <p class="organization">SenseTime</p>
+            <p>
+              Converted a 3D LiDAR detection network from FP32 to FP16 and evaluated the optimized
+              model across deployment platforms.
+            </p>
+          </div>
+        </article>
       </section>
 
-      <section class="contact-section">
-        <p class="section-index inverse">06 / Contact</p>
-        <h2>Interested in temporal intelligence, reliable ML, or research collaboration?</h2>
-        <a href="mailto:leafhaolin@gmail.com">leafhaolin@gmail.com ↗</a>
+      <section class="section" id="education">
+        <h2>Education</h2>
+
+        <article class="entry compact">
+          <div class="entry-meta">2024-29</div>
+          <div>
+            <h3>The Pennsylvania State University</h3>
+            <p>PhD in Electrical Engineering, expected 2029</p>
+          </div>
+        </article>
+
+        <article class="entry compact">
+          <div class="entry-meta">2022-24</div>
+          <div>
+            <h3>Boston University</h3>
+            <p>MS in Electrical and Computer Engineering</p>
+          </div>
+        </article>
+
+        <article class="entry compact">
+          <div class="entry-meta">2018-22</div>
+          <div>
+            <h3>Shanghai Jiao Tong University, UM-SJTU Joint Institute</h3>
+            <p>BE in Electrical and Computer Engineering; Minor in Data Science</p>
+          </div>
+        </article>
+      </section>
+
+      <section class="section" id="skills">
+        <h2>Technical skills</h2>
+        <p>
+          <strong>Languages:</strong> Python, C/C++, Java, R, MATLAB, SQL<br />
+          <strong>Machine learning:</strong> PyTorch, TensorFlow, Keras, scikit-learn<br />
+          <strong>Systems:</strong> Linux, Git, Docker, Shell, distributed training
+        </p>
       </section>
     </main>
 
     <footer class="site-footer">
-      <p>© <span id="current-year">2026</span> Haolin Ye</p>
-      <p>Built as a static GitHub Pages site.</p>
-      <a href="#top">Back to top ↑</a>
+      <p>&copy; <span id="current-year">2026</span> Haolin Ye</p>
+      <p>
+        <a href="mailto:leafhaolin@gmail.com">Email</a>
+        <span aria-hidden="true"> / </span>
+        <a href="https://www.linkedin.com/in/haolin-ye-6b43791b0/" target="_blank" rel="noreferrer">LinkedIn</a>
+        <span aria-hidden="true"> / </span>
+        <a href="https://github.com/Leaf-hl" target="_blank" rel="noreferrer">GitHub</a>
+      </p>
     </footer>
 
     <script src="script.js"></script>
