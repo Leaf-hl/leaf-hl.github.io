@@ -58,30 +58,30 @@ const education = [
   },
 ];
 
-const projects = [
+const researchThemes = [
   {
     number: "01",
-    title: "Efficient Multimodal Perception",
-    eyebrow: "Research · Northeastern University",
-    text: "Profiled BEVFusion for 3D detection and investigated practical routes to reduce FLOPs and trainable parameters without losing the benefits of multi-sensor fusion.",
+    title: "Time-Series Foundation Models",
+    eyebrow: "Current focus · Foundation models",
+    text: "I am investigating how large-scale pretraining can learn transferable temporal representations across domains, variables, sampling rates, and forecasting horizons.",
   },
   {
     number: "02",
-    title: "Audio Transcription with T5",
-    eyebrow: "Research · Boston University",
-    text: "Reimplemented and fine-tuned T5 in PyTorch to evaluate sequence-to-sequence modeling for audio transcription under the supervision of Prof. Brian Kulis.",
+    title: "Multi-Scale Temporal Representation",
+    eyebrow: "Research question · Representation learning",
+    text: "My work explores adaptive patching, frequency-aware features, and multi-resolution modeling for long sequences with complex local and global dynamics.",
   },
   {
     number: "03",
-    title: "Learning for Resource Allocation",
-    eyebrow: "Research · UM–SJTU Joint Institute",
-    text: "Combined blockchain, cloud/fog computing, Q-learning, and ADMM to study computation offloading and resource allocation in intelligent networked systems.",
+    title: "Efficient Adaptation & Inference",
+    eyebrow: "Research direction · Efficient AI",
+    text: "I am interested in parameter-efficient adaptation, compact architectures, and deployment-aware inference that make temporal foundation models practical beyond large compute environments.",
   },
   {
     number: "04",
-    title: "Deep Spam Classification",
-    eyebrow: "Course project · Boston University",
-    text: "Built a trainable document representation with GloVe 6B embeddings and boosting-inspired modeling, achieving over 98% classification accuracy.",
+    title: "Robust Transfer Across Domains",
+    eyebrow: "Research direction · Generalization",
+    text: "A central question is how temporal models behave under distribution shift, missing observations, irregular sampling, and limited labels—and how to evaluate transfer reliably.",
   },
 ];
 
@@ -108,8 +108,8 @@ export default function Home() {
         </h1>
         <div className="hero-lower">
           <p>
-            I work across machine learning systems, signal processing, and computer vision—turning
-            research ideas into models that can operate under real computational and physical constraints.
+            I currently focus on foundation models for time-series data, with broader interests in
+            machine learning systems, signal processing, and deployable AI.
           </p>
           <div className="hero-actions">
             <a className="button primary" href="/Haolin-Ye-CV.pdf" download>
@@ -121,9 +121,9 @@ export default function Home() {
           </div>
         </div>
         <div className="research-strip" aria-label="Research focus areas">
-          <div><span>01</span><strong>Efficient AI</strong><small>Model compression · Quantization</small></div>
-          <div><span>02</span><strong>ML Systems</strong><small>Distributed training · Parallelism</small></div>
-          <div><span>03</span><strong>Perception</strong><small>Signals · Images · 3D sensing</small></div>
+          <div><span>01</span><strong>Time-Series FMs</strong><small>Pretraining · Transfer · Forecasting</small></div>
+          <div><span>02</span><strong>Efficient AI</strong><small>Adaptation · Compact inference</small></div>
+          <div><span>03</span><strong>Robust Learning</strong><small>Shift · Missingness · Generalization</small></div>
         </div>
       </section>
 
@@ -148,13 +148,13 @@ export default function Home() {
       <section className="section" id="research" aria-labelledby="research-title">
         <div className="section-heading">
           <div>
-            <div className="section-label">Research & selected work</div>
-            <h2 id="research-title">Problems I like to work on.</h2>
+            <div className="section-label">Current research agenda</div>
+            <h2 id="research-title">Foundation models for temporal intelligence.</h2>
           </div>
-          <p>My projects sit at the boundary between algorithms and systems: measurable, implementation-driven, and grounded in deployment constraints.</p>
+          <p>My current work asks how a single pretrained model can understand diverse temporal processes, transfer across domains, and remain efficient and reliable in real-world settings.</p>
         </div>
         <div className="project-grid">
-          {projects.map((project) => (
+          {researchThemes.map((project) => (
             <article className="project-card" key={project.number}>
               <div className="project-number">{project.number}</div>
               <div className="project-eyebrow">{project.eyebrow}</div>
