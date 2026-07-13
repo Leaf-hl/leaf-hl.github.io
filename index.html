@@ -28,6 +28,7 @@
         <a href="#research">Research</a>
         <a href="#publications">Publications</a>
         <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
         <a href="#education">Education</a>
       </nav>
     </header>
@@ -43,6 +44,10 @@
           I study time-series foundation models and reliable representation learning. My current
           work asks how pretrained temporal models can transfer across domains, adapt efficiently,
           and remain robust under missing data, irregular sampling, and distribution shift.
+        </p>
+        <p class="research-profile">
+          My experience spans temporal modeling, distributed training, efficient 3D perception,
+          and AI systems that operate under real-world hardware and data constraints.
         </p>
         <p class="links" aria-label="Contact and profiles">
           <a href="mailto:leafhaolin@gmail.com">Email</a>
@@ -118,53 +123,166 @@
         <h2>Selected experience</h2>
 
         <article class="entry">
-          <div class="entry-meta">2025</div>
+          <div class="entry-meta">May-Aug 2025</div>
           <div>
             <h3>R&amp;D Graduate Intern</h3>
-            <p class="organization">Eriez Manufacturing Co.</p>
-            <p>
-              Developed orientation-aware learning methods for electromagnetic metal detection,
-              including geometric orientation estimation, signal normalization, and robust
-              classification.
-            </p>
+            <p class="organization">Eriez Manufacturing Co. · Erie, Pennsylvania</p>
+            <ul class="detail-list">
+              <li>
+                Developed orientation-aware deep learning methods to improve electromagnetic metal
+                detection across changing product orientations.
+              </li>
+              <li>
+                Designed a conditional GAN for signal normalization and an orientation-aware ECF
+                framework for more robust generalization across testing conditions.
+              </li>
+            </ul>
           </div>
         </article>
 
         <article class="entry">
-          <div class="entry-meta">2024</div>
+          <div class="entry-meta">May-Aug 2024</div>
           <div>
             <h3>System Communication Engineer Intern</h3>
-            <p class="organization">Wuwen Xinqiong, AI R&amp;D</p>
-            <p>
-              Built components for HETHUB, including distributed parallelism strategies,
-              performance prediction, and automated parallel planning.
-            </p>
+            <p class="organization">Wuwen Xinqiong, AI R&amp;D · Shanghai, China</p>
+            <ul class="detail-list">
+              <li>
+                Built core components of HETHUB for training large-scale models across heterogeneous
+                clusters, supporting pipeline, tensor, data, and sequence parallelism.
+              </li>
+              <li>
+                Developed a performance predictor and automatic parallel planner; contributed to
+                the resulting HETHUB paper.
+              </li>
+            </ul>
           </div>
         </article>
 
         <article class="entry">
-          <div class="entry-meta">2023</div>
+          <div class="entry-meta">May-Sep 2023</div>
           <div>
             <h3>Research Assistant</h3>
-            <p class="organization">Northeastern University, Institute for the Wireless Internet of Things</p>
+            <p class="organization">
+              Institute for the Wireless Internet of Things, Northeastern University · Boston,
+              Massachusetts
+            </p>
+            <ul class="detail-list">
+              <li>
+                Profiled BEVFusion for multimodal 3D detection, measuring compute and parameter
+                costs to identify opportunities for efficient training and inference.
+              </li>
+              <li>
+                Studied large-language-model quantization, with emphasis on the feasibility of
+                further activation quantization.
+              </li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="entry">
+          <div class="entry-meta">Dec 2021-May 2022</div>
+          <div>
+            <h3>Software and Systems Development Intern</h3>
+            <p class="organization">SenseTime · Shanghai, China</p>
+            <ul class="detail-list">
+              <li>
+                Converted and tuned a 3D LiDAR object-detection network from FP32 to FP16 to reduce
+                deployment memory pressure.
+              </li>
+              <li>
+                Evaluated the optimized network across deployment platforms and documented the
+                validation workflow.
+              </li>
+            </ul>
+          </div>
+        </article>
+
+        <details class="additional-experience">
+          <summary>Earlier engineering experience</summary>
+          <div class="additional-experience-content">
+            <article class="entry">
+              <div class="entry-meta">Aug-Dec 2021</div>
+              <div>
+                <h3>Chip Research Intern</h3>
+                <p class="organization">Shanghai Taize Semiconductor Co., Ltd. · Shanghai, China</p>
+                <p>
+                  Led an intern team implementing ResNet-18 and optimizing Inception-v3 in C for
+                  FPGA deployment, then evaluated image-recognition accuracy on hardware.
+                </p>
+              </div>
+            </article>
+
+            <article class="entry">
+              <div class="entry-meta">Jan-Apr 2021</div>
+              <div>
+                <h3>AI Research Intern</h3>
+                <p class="organization">Shanghai IC R&amp;D Center · Shanghai, China</p>
+                <p>
+                  Built FCN- and U-Net-based segmentation pipelines for automated chip-edge quality
+                  inspection, including dataset labeling and ResNet-50 experiments.
+                </p>
+              </div>
+            </article>
+          </div>
+        </details>
+      </section>
+
+      <section class="section" id="projects">
+        <h2>Research &amp; selected projects</h2>
+
+        <article class="entry">
+          <div class="entry-meta">Mar-May 2023</div>
+          <div>
+            <h3>Audio transcription with T5</h3>
+            <p class="organization">Information &amp; Data Sciences Lab, Boston University</p>
             <p>
-              Investigated efficient multimodal 3D detection through BEVFusion profiling and
-              studied quantization for large language models.
+              Reimplemented and fine-tuned T5 in PyTorch to study sequence-to-sequence modeling for
+              audio transcription. Advised by Prof. Brian Kulis.
             </p>
           </div>
         </article>
 
         <article class="entry">
-          <div class="entry-meta">2021-22</div>
+          <div class="entry-meta">Nov 2020-Aug 2021</div>
           <div>
-            <h3>Software and Systems Development Intern</h3>
-            <p class="organization">SenseTime</p>
+            <h3>Blockchain-enabled intelligent networking and computing</h3>
+            <p class="organization">Intelligent Big Data System Lab, UM-SJTU Joint Institute</p>
             <p>
-              Converted a 3D LiDAR detection network from FP32 to FP16 and evaluated the optimized
-              model across deployment platforms.
+              Studied computation offloading and resource allocation across cloud, fog, and
+              Internet-of-Vehicles settings using Q-learning and ADMM-based optimization. Advised
+              by Prof. Jie Li.
             </p>
           </div>
         </article>
+
+        <div class="project-grid">
+          <article class="project-card">
+            <p class="project-year">2022</p>
+            <h3>Spam detection</h3>
+            <p>
+              Combined GloVe embeddings, deep learning, and boosting to build a dynamically sized
+              text classifier that achieved over 98% accuracy.
+            </p>
+          </article>
+
+          <article class="project-card">
+            <p class="project-year">2021</p>
+            <h3>Parallel SQL database</h3>
+            <p>
+              Implemented a multithreaded database that partitioned tables for parallel execution
+              and coordinated concurrent operations with read-write locks.
+            </p>
+          </article>
+
+          <article class="project-card">
+            <p class="project-year">2021</p>
+            <h3>Shanghai Airbnb analysis</h3>
+            <p>
+              Used permutation tests to evaluate how room type and review activity relate to
+              listing prices.
+            </p>
+          </article>
+        </div>
       </section>
 
       <section class="section" id="education">
@@ -197,11 +315,42 @@
 
       <section class="section" id="skills">
         <h2>Technical skills</h2>
-        <p>
-          <strong>Languages:</strong> Python, C/C++, Java, R, MATLAB, SQL<br />
-          <strong>Machine learning:</strong> PyTorch, TensorFlow, Keras, scikit-learn<br />
-          <strong>Systems:</strong> Linux, Git, Docker, Shell, distributed training
-        </p>
+        <div class="skills-grid">
+          <p><strong>Languages</strong><span>Python, C/C++, Java, R, MATLAB, SQL, Verilog</span></p>
+          <p>
+            <strong>Machine learning</strong>
+            <span>PyTorch, TensorFlow, Keras, scikit-learn, Pandas, SciPy</span>
+          </p>
+          <p>
+            <strong>Systems &amp; tools</strong>
+            <span>Linux, Git, Docker, Shell, LaTeX, distributed training, FPGA workflows</span>
+          </p>
+        </div>
+      </section>
+
+      <section class="section" id="honors">
+        <h2>Honors</h2>
+        <ul class="honors-list">
+          <li>
+            <span class="honor-label">Second Prize</span>
+            <span class="honor-name">6th Qian Xuesen Cup, Shanghai Jiao Tong University</span>
+            <time datetime="2020">2020</time>
+          </li>
+          <li>
+            <span class="honor-label">Top 5 Finalist</span>
+            <span class="honor-name">
+              Midea Refrigerator School-Enterprise Joint Creative Competition
+            </span>
+            <time datetime="2020">2020</time>
+          </li>
+          <li>
+            <span class="honor-label">Champion</span>
+            <span class="honor-name">
+              Shanghai Jiao Tong University RoboMaster Campus Competition
+            </span>
+            <time datetime="2018">2018</time>
+          </li>
+        </ul>
       </section>
     </main>
 

@@ -115,6 +115,13 @@ h1 {
   line-height: 1.65;
 }
 
+.research-profile {
+  max-width: 690px;
+  margin: -8px 0 22px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
 .links {
   display: flex;
   flex-wrap: wrap;
@@ -192,6 +199,99 @@ h3 {
 
 .entry h3 { margin-top: -2px; }
 
+.detail-list {
+  margin: 8px 0 0;
+  padding-left: 18px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.detail-list li + li { margin-top: 5px; }
+
+.additional-experience {
+  margin-top: 2px;
+  border-top: 1px solid #eeeeee;
+}
+
+.additional-experience summary {
+  width: fit-content;
+  padding: 22px 0 0;
+  color: var(--link);
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.additional-experience summary:hover { text-decoration: underline; }
+
+.additional-experience-content { padding-top: 24px; }
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 4px;
+}
+
+.project-card {
+  padding: 18px;
+  border: 1px solid var(--line);
+}
+
+.project-card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.project-card .project-year {
+  margin-bottom: 8px;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.skills-grid p { display: grid; gap: 5px; }
+.skills-grid span { font-size: 14px; }
+
+.honors-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.honors-list li {
+  display: grid;
+  grid-template-columns: 115px 1fr auto;
+  gap: 18px;
+  padding: 14px 0;
+  border-top: 1px solid #eeeeee;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.honors-list li:first-child {
+  padding-top: 0;
+  border-top: 0;
+}
+
+.honors-list .honor-label {
+  color: var(--text);
+  font-weight: 650;
+}
+
+.honors-list .honor-name { color: var(--muted); }
+
+.honors-list time {
+  color: var(--muted);
+  font-size: 13px;
+  font-variant-numeric: tabular-nums;
+}
+
 .entry.compact { padding-bottom: 20px; }
 .entry.compact + .entry.compact { padding-top: 20px; }
 .entry.compact p { margin: 0; }
@@ -232,6 +332,18 @@ h3 {
     grid-template-columns: 1fr;
     gap: 5px;
   }
+
+  .project-grid,
+  .skills-grid { grid-template-columns: 1fr; }
+
+  .honors-list li {
+    grid-template-columns: 1fr auto;
+    gap: 2px 12px;
+  }
+
+  .honors-list .honor-label { grid-column: 1; }
+  .honors-list .honor-name { grid-column: 1 / -1; }
+  .honors-list li > time { grid-column: 2; grid-row: 1; }
 
   .site-footer { flex-direction: column; }
 }
